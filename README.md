@@ -16,7 +16,7 @@ https://github.com/GigaPuddings/snippets-code-plugin-translation-offline-runtime
 Versioned release URL:
 
 ```text
-https://github.com/GigaPuddings/snippets-code-plugin-translation-offline-runtime/archive/refs/tags/v1.5.6.zip
+https://github.com/GigaPuddings/snippets-code-plugin-translation-offline-runtime/archive/refs/tags/1.5.6.zip
 ```
 
 This repository is synchronized from the main application repository by
