@@ -3,7 +3,7 @@
 Official installable plugin package for Snippets Code.
 
 - Plugin ID: `translation-offline-runtime`
-- Version: `2.0.1`
+- Version: `2.0.2`
 - Source: `docs/examples/translation-offline-runtime`
 - App compatibility: `managed by host plugin`
 
@@ -16,7 +16,7 @@ https://github.com/GigaPuddings/snippets-code-plugin-translation-offline-runtime
 Versioned release URL:
 
 ```text
-https://github.com/GigaPuddings/snippets-code-plugin-translation-offline-runtime/archive/refs/tags/2.0.1.zip
+https://github.com/GigaPuddings/snippets-code-plugin-translation-offline-runtime/archive/refs/tags/2.0.2.zip
 ```
 
 This repository is synchronized from the main application repository by
