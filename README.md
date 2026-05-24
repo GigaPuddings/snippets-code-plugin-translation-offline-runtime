@@ -1,24 +1,26 @@
-# Translation Offline Runtime
+# Translation Offline Runtime Package
 
-Official installable plugin package for Snippets Code.
+This is a resource-only local plugin package for the built-in `translation`
+plugin. It keeps the Transformers.js / ONNX runtime out of the core frontend
+bundle. The model files are still downloaded into the browser cache on demand by
+Transformers.js after this runtime package is installed.
 
-- Plugin ID: `translation-offline-runtime`
-- Version: `2.0.2`
-- Source: `docs/examples/translation-offline-runtime`
-- App compatibility: `managed by host plugin`
-
-Install URL:
+Expected installed layout:
 
 ```text
-https://github.com/GigaPuddings/snippets-code-plugin-translation-offline-runtime/archive/refs/heads/main.zip
+translation-offline-runtime/
+  plugin.json
+  resources/
+    transformers/
+      transformers.min.js
 ```
 
-Versioned release URL:
+The runtime file must export the same ESM API as `@huggingface/transformers`,
+including `pipeline` and `env`.
+
+At runtime the offline translator searches:
 
 ```text
-https://github.com/GigaPuddings/snippets-code-plugin-translation-offline-runtime/archive/refs/tags/2.0.2.zip
+<app-data>/plugins/translation-offline-runtime/resources/transformers/transformers.min.js
+<app-data>/plugins/translation/resources/transformers/transformers.min.js
 ```
-
-This repository is synchronized from the main application repository by
-`pnpm plugins:sync-repos`. Manual edits should be made in the main source
-package, then synchronized again.
